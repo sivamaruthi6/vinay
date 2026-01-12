@@ -1,3 +1,46 @@
 siva
 ls is the list of file
 
+✅ Recommended Way (Change existing origin)
+1️⃣ Check current remote
+git remote -v
+
+
+Output (example):
+
+origin  https://github.com/sivamaruthi6/srinu.git (fetch)
+origin  https://github.com/sivamaruthi6/srinu.git (push)
+
+2️⃣ Change the remote URL
+git remote set-url origin https://github.com/sivamaruthi6/vinay.git
+
+3️⃣ Verify the change
+git remote -v
+
+
+Output:
+
+origin  https://github.com/sivamaruthi6/vinay.git (fetch)
+origin  https://github.com/sivamaruthi6/vinay.git (push)
+
+🔁 Alternative Method (Remove & Add Again)
+
+If you want to recreate the remote:
+
+git remote remove origin
+git remote add origin https://github.com/sivamaruthi6/vinay.git
+
+
+Verify:
+
+git remote -v
+
+🚀 Push Your Code
+
+If this is the first push to the new repository:
+
+git push -u origin main
+
+
+(or replace main with master if needed)
+
